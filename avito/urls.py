@@ -19,7 +19,7 @@ from django.urls import path
 from ads import views
 
 urlpatterns = [
-    path('', views.root),
+    path('', views.index),
     path('cat/', views.CategoryView.as_view()),
     path('ads/', views.AdsView.as_view()),
     path('ads/<int:pk>', views.AdsDetailView.as_view()),
